@@ -1,5 +1,5 @@
 # Som-Animais
-projetozinho de teste utilizando um polimorfismo feio e nutela :)
+projetozinho de teste utilizando polimorfismo
 
 ### Executando o projeto:
 * Baixe o arquivo JAR:
