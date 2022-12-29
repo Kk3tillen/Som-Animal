@@ -13,13 +13,12 @@ import javax.sound.sampled.Clip;
  *
  * @author kezia
  */
-public class Ovelha extends Animal{
+public class Ovelha implements Animal{
 
     @Override
     public void emitirSom() {
         try {
-            //fase de teste.
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("C:\\Users\\kezia\\Documents\\JAVA\\SomAnimais\\src\\SonsAnimais\\ovelha.wav").getAbsoluteFile());
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(getClass().getResourceAsStream("/sonsAnimais/ovelha.wav"));
             Clip clip = AudioSystem.getClip();
             clip.open(audioInputStream);
             clip.start();
