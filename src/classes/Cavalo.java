@@ -16,17 +16,10 @@ import javax.sound.sampled.Clip;
 public class Cavalo implements Animal{
 
     @Override
-    public void emitirSom(Animal cavalo) {
-        try {
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(getClass().getResourceAsStream("/sonsAnimais/cavalo.wav"));
-            Clip clip = AudioSystem.getClip();
-            clip.open(audioInputStream);
-            clip.start();
-            
-        } catch (Exception ex) {
-            System.out.println("Erro ao executar SOM!");
-            ex.printStackTrace();
-        }
+    public void emitirSom() {
+        Som.tocarAudio("cavalo");
     }
+
+   
     
 }
