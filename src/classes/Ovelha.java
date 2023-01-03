@@ -16,17 +16,8 @@ import javax.sound.sampled.Clip;
 public class Ovelha implements Animal{
 
     @Override
-    public void emitirSom(Animal ovelha) {
-        try {
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(getClass().getResourceAsStream("/sonsAnimais/ovelha.wav"));
-            Clip clip = AudioSystem.getClip();
-            clip.open(audioInputStream);
-            clip.start();
-            
-        } catch (Exception ex) {
-            System.out.println("Erro ao executar SOM!");
-            ex.printStackTrace();
-        }
+    public void emitirSom() {
+        Som.tocarAudio("ovelha");
     }
-    
+
 }

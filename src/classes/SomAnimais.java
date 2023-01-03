@@ -10,18 +10,17 @@ package classes;
  */
 public class SomAnimais extends javax.swing.JFrame {
 
-    /**
-     * Creates new form SomAnimais
-     */
-    public SomAnimais() {
+     public SomAnimais() {
         initComponents();
        
     }
     
-    public static void ouvirSom(Animal a){
-        a.emitirSom(a);
-    }
-
+    
+    /**
+     * Creates new form SomAnimais
+     */
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -153,29 +152,29 @@ public class SomAnimais extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Animal galinha = new Galinha();
-        ouvirSom(galinha);
+        galinha.emitirSom();
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         Animal cavalo = new Cavalo();
-        ouvirSom(cavalo);
+        cavalo.emitirSom();
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         Animal gatinho = new Gato();
-        ouvirSom(gatinho);
+        gatinho.emitirSom();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         Animal c = new Cachorro();
-        ouvirSom(c);
+        c.emitirSom();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Animal ovelha = new Ovelha();
-        ouvirSom(ovelha);
+        ovelha.emitirSom();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
