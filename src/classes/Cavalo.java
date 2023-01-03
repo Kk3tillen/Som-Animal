@@ -16,7 +16,7 @@ import javax.sound.sampled.Clip;
 public class Cavalo implements Animal{
 
     @Override
-    public void emitirSom() {
+    public void emitirSom(Animal cavalo) {
         try {
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(getClass().getResourceAsStream("/sonsAnimais/cavalo.wav"));
             Clip clip = AudioSystem.getClip();

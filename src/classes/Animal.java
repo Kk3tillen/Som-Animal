@@ -7,5 +7,5 @@ package classes;
  */
 public interface Animal {
     
-    public void emitirSom();
+    public void emitirSom(Animal a);
 }
