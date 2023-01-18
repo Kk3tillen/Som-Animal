@@ -4,6 +4,7 @@
  */
 package classes;
 
+import java.io.BufferedInputStream;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -15,7 +16,7 @@ import javax.sound.sampled.Clip;
 public abstract class Som {
     public static void tocarAudio(String nomeArquivo){
         try {
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(Som.class.getResourceAsStream("/sonsAnimais/" + nomeArquivo + ".wav"));
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new BufferedInputStream(Som.class.getResourceAsStream("/sonsAnimais/" + nomeArquivo + ".wav")));
             Clip clip = AudioSystem.getClip();
             clip.open(audioInputStream);
             clip.start();
