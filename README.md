@@ -10,3 +10,8 @@ projetozinho de teste utilizando polimorfismo e os exemplos usados pelo professo
 
 * Só clicar nos animaiszinhos! :)
 
+## Exemplo de funcionalidade
+
+https://github.com/user-attachments/assets/93051c35-75ae-4beb-be5d-72de0718734a
+
+
